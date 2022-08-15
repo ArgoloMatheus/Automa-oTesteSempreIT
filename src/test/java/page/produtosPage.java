@@ -25,11 +25,12 @@ public class produtosPage {
      * Elementos de Tela
      * */
     private WebElement produtoSelecionado() {
-        return driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
+        return driver.findElement(By.xpath("//button[text()='Add to cart']"));
     }
 
     private WebElement carrinhoDeCompras() {
         return driver.findElement(By.xpath("//a[@class='shopping_cart_link'][contains(.,'1')]"));
+
     }
 
     private WebElement btnCheckout() {
